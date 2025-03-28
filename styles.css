@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #004aad;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo svg {
+    width: 170px;
+    height: 170px;
+}
+
+.logo span {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background-color: #e68900;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e3f2fd;
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 22px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.mission-vision h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #004aad;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.cta-section .cta {
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Animations */
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: slideIn 0.8s ease-in forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
